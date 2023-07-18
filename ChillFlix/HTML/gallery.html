@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | ChillFlix</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/MainStyleSheet.css">
+	<link rel = "stylesheet" href="../CSS/GalleryStyleSheet.css">
+
+  </head>
+  <body>
+   <!--Navigation Bar-->
+   <div class="top fixed">
+    <!--Adds the icon picture to the navigation bar.-->
+    <div class="Logo"><img src="../Images/Picture5.png" alt="logo"></div>
+    <!--Creating menu icon-->
+    <div class="menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul class="NavList">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="CommentsForm.html">Comments</a></li>
+            <li><a href="Store.html">Store</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="SiteMap.html">Site Map</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+    </nav>
+    <script>
+        menu = document.querySelector(".menu");
+        menu.onclick = function(){
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</div>
+<!--End of Navigation Bar-->
+<a href="#toDown"><img src="../Images/ScrollDown.png" alt="down arrow" style="top:100px" class="Arrow"></a>
+<div id="toUp"></div>
+  <div class ="background-image">
+  
+  <div class="topic">
+            <h1>GALLERY</h1>
+        </div>
+</div> 
+  <main>  <!--main content-->
+
+        <div class="font-change">     <!--adjust the font size of the webpage when called-->
+            <button class="btn" onclick="smallFont()">-A</button>
+            <button class="btn" onclick="defaultFont()">A</button>
+            <button class="btn" onclick="mediumFont()">A+</button>
+        </div>
+
+        <div class="color-picker">
+            <input type="color" id="color-picker" oninput="colorPicker()">
+        </div>
+
+        <div class="color-change">     <!--adjust the background color, text color-->
+            <button id="default" class="btn" onclick="defaultMode()">Default Mode</button>
+            <button id="light" class="btn" onclick="lightMode()">Light Mode</button>
+            <button id="dark" class="btn" onclick="darkMode()">Dark Mode</button>
+            <script src="../JS/gallery.js"></script>
+        </div>
+
+
+        <div class="container">
+            
+            <section>
+<div class="hover-area">
+                    <img src="../Images/GTitanic.jpg" alt="Titanic">
+                </div>
+
+                <div class="hidden-area">
+                    <h3>ROMANCE | TITANIC</h3>
+                    <p>Titanic is a 1997 American epic romance and disaster film. Kate Winslet, who portrayed Rose DeWitt Bukater, and Leonardo DiCaprio, who portrayed Jack Dawson are the two main characters. This is a picture of Titanic sinking scene. It is one of the saddest scenes in the movie and it is one of the most well shot scenes in history. They shooted this scene using a Dutch tilt, a composited waterline that made the ship look more tilted, and various miniatures of the ship.</p> 
+                </div>
+<div class="hover-area" >
+                    <img src="../Images/GEndgame.jfif" alt="EndGame">
+                </div>
+				<div class="hidden-area">
+                    <h3>SCI-FI | ENDGAME</h3>
+                    <p>Avengers Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. The final battle of Avengers Endgame was officially called the Battle of Earth in the first episode of the first season of Ms. Marvel. Final fight scene in endgame was in in upstate New York. The Battle of Earth was the ultimate battle for the fate of the planet and the entire universe, fought among the Avengers and their allies united against alternate timeline versions of Thanos, the Black Order, and their full arsenal of Chitauri, Sakaaran and Outrider armies.</p> 
+                </div>
+            </section>    
+              
+                <div class="empty-area"></div>
+             
+            <section>
+                
+                 <div class="hover-area">
+                    <img src="../Images/Gdinosaur.jfif" alt="The Good Dinosaur">
+                </div>
+
+                <div class="hidden-area">
+                    <h3>FAMILY | THE GOOD DINOSAUR</h3>
+                   <p>The Good Dinosaur is a 2015 American computer-animated adventure film produced by Pixar Animation Studios and distributed by Walt Disney Studios Motion Pictures. The relationship that slowly developed between Arlo and Spot throughout the journey is the best part of the film. The Good Dinosaur explores similar themes of love, friendship, compassion and courage to overcome life's challenges.</p>
+                </div> 
+				<div class="hover-area">
+                    <img src="../Images/annabelleG.jfif" alt="Annabelle">
+                </div>
+
+                <div class="hidden-area">
+                    <h3>HORROR | ANNABELLE</h3>
+                   <p>Annabelle is a 2014 American supernatural horror film directed by John R. Leonetti, written by Gary Dauberman and produced by Peter Safran and James Wan. Annabelle is an allegedly haunted raggedy ann doll, housed in the occult museum of the paranormal investigators. The scariest scene in Annabelle comes home jumps out of a creepy cabinet.</p>
+                </div>
+				
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <a href="#toUp"><img src="../Images/ScrollUp.png" alt="up arrow" style="top:595px" class="Arrow"></a>
+    <footer>
+        <div id="toDown"></div><p>Page Editor :<a href="student4EditorsPage.html"> Tenuri Wickramaarachchi</a></p>
+    </footer>
+
+</body>
+
+</html>  
+  

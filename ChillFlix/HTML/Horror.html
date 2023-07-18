@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>HORROR | ChillFlix</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/MainStyleSheet.css">
+    <link rel="stylesheet" href="../CSS/Horror_StyleSheet.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="top fixed">
+        <!--Adds the icon picture to the navigation bar.-->
+        <div class="Logo"><img src="../Images/Picture5.png" alt="logo"></div>
+        <!--Creating menu icon-->
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="NavList">
+                <li><a class="active" href="Home.html">Home</a></li>
+                <li><a href="CommentsForm.html">Comments</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <script>
+            menu = document.querySelector(".menu");
+            menu.onclick = function(){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </div>
+    <!--End of Navigation Bar-->
+    <a href="#toDown"><img src="../Images/ScrollDown.png" alt="down arrow" style="top:100px;left:1225px" class="Arrow"></a>
+    <div id="toUp"></div>
+
+    <div class="background_image">
+        <p style="background-color: rgba(31, 30, 30, 0.5);">Horror</p>
+    </div>
+    <!-- text within container styled with css-->
+    <p class="title">Let us now delve deeper into the history of horror</p>
+    <div class="history_container">
+        <div >
+            <img src="../Images/monster.jpg" alt="Greek Monsters" width="260" height="146" style="float: left;">
+            <p style="text-align: left;">
+                The ideology behind our current horror films are said to be derived from ancient Greek mythology. 
+                Greek myths not only comprise of tales of gods and humans, but also tales of frightening, morbid creatures that we have 
+                now termed monsters. For example, bronze footed creatures known as empousa, who would drink the blood of men, are said 
+                to be the precursors of vampires.
+            </p>
+        </div>
+        <br>
+        <div>
+            <img src="../Images/witchesanddemons.jpg" alt="Witchs and demons in the middle ages" width="260" height="146" style="float: right;">
+            <p style="text-align: right;">
+                These myths as well as myths of other cultures inspired folklores and superstitions in Europe during the Middle Ages. 
+                When Christianity was prevalent in Europe it gave rise to the myths of witches and demons for a long time until eventually 
+                the Age of Enlightenment took over. The intellectuals of this time debated the existence of such creatures with logic and 
+                rationalism.
+            </p> 
+        </div>
+        <br>
+        <div>
+            <img src="../Images/CastleOtranto1.jpg" alt="The castle of Otranto" width="110" height="135" style="float: left;">
+            <p style="text-align: left;">
+                However, writers used these ideas in their work. A group of writers known as “The Graveyard Poets” are credited 
+                by historians as the precursor of gothic literature. A man named Horace Walpole is credited with writing the first gothic 
+                novel known as “The Castle of Otranto” in 1764. Walpole alleged that his book was a translation of Italian book. Gothic novels 
+                embody the themes of uncanny, unnatural elements of architecture during that time. Many more gothic novels were published afterwards.
+            </p>
+        </div>
+        <br>
+        <div>
+            <img src="../Images/frankenstein.jpg" alt="Frakenstein" width="115" height="175" style="float: right;">
+            <p style="text-align: right;">
+                During the early 1800s two books that were vital in creating the horror genre were released. 
+                The first being Frankenstein, which was written by Mary Shelley and published in 1818. This book took inspiration from 
+                Greek mythology, more specifically Prometheus, the book was also called “The Modern Prometheus”.
+                The second book was John Polidori’s short story “The Vampyre” which was published in 1819. This book features a vampire 
+                that feeds off the blood of young women. 70 years later another book known as “Dracula” by Bram Stoker also had a 
+                vampire that feasted on the blood of innocents. However, John Polidori is credited with creating the first vampire 
+                in fiction novels.
+            </p>
+        </div>
+        <br>
+        <div>
+            <img src="../Images/Dracula.jpg" alt="Dracula" width="200" height="90" style="float: left;">
+            <p style="text-align: left;">
+                In the early 1900s many films,based off books, that had similarities to classic Hollywood horror movies were 
+                released. Although back then the term horror was not used to describe them. It wasn’t until the film Dracula starring 
+                Bela Lugosi was released that the new era of cinematic horror began.
+            </p>
+        </div>
+    </div>
+
+    <p class ="title" style="margin-top:100px;">Here are a few horror movie recommendations</p>
+    <!-- cards for movie details -->
+    <div class="movie_container">
+        <img src="../Images/annabelle.jpg" width="245" height="245" alt="Annabelle" style="margin-left: 10px;margin-top: 10px;margin-right: 10px;">
+        <div class="content">
+            <div class="text">A man buys his pregnant wife a beautiful porcelain doll. Not long after they were attacked by devil 
+                worshippers who try to summon a demon and in turn made the doll a vessel for evil. Thereafter many strange happenings 
+                begin in their home. 
+            </div>
+        </div>
+        <div class="details" >
+            <p>Name: Annabelle</p>
+            <p>Duration: 1h 39m</p>
+            <p class="rating_container">R-Rated</p> 
+            <a class="link" href="https://www.youtube.com/watch?v=paFgQNPGlsg">Watch trailer here</a>
+        </div>
+    </div>
+    <div class="movie_container">
+        <img src="../Images/us.jpg" width="245" height="245" alt="Us" style="margin-left: 10px;margin-top: 10px;margin-right: 10px;">
+        <div class="content">
+            <div class="text">Adelaide Wilson and her family and are on a vacation when they are attacked by mysterious figures 
+                dressed in red. Upon closer inspection, the Wilsons realise that the intruders are exact lookalikes of them.
+            </div>
+        </div>
+        <div class="details" >
+            <p>Name: Us</p>
+            <p>Duration: 2h 1m</p> 
+            <p class="rating_container">R-Rated</p>
+            <a class="link" href="https://www.youtube.com/watch?v=hNCmb-4oXJA">Watch trailer here</a> 
+        </div>
+    </div>
+    <div class="movie_container">
+        <img src="../Images/smile.jpg" width="245" height="245" alt="Smile" style="margin-left: 10px;margin-top: 10px;margin-right: 10px;">
+        <div class="content">
+            <div class="text">Dr Rose, a therapist at a psychiatric ward witnesses her patient kill herself, soon after she starts 
+                having frightening occurences that she cannot justify happen around her. To escape her new terrifying reality she must 
+                deal with her disturbing past first.
+            </div>
+        </div>
+        <div class="details">
+            <p>Name: Smile</p>
+            <p>Duration: 1h 55m</p> 
+            <p class="rating_container">R-Rated</p>
+            <a class="link" href="https://www.youtube.com/watch?v=BcDK7lkzzsU">Watch trailer here</a>
+        </div>
+    </div>
+    <div class="movie_container">
+        <img src="../Images/sleepyhollow.jpg" width="245" height="245" alt="Sleepy Hollow" style="margin-left: 10px;margin-top: 10px;margin-right: 10px;">
+        <div class="content">
+            <div class="text">A police detective named Ichabod Crane is sent from New York to a small village known as Sleepy Hollow 
+                to investigate a string of murders that were committed by a mysterious individual the villagers called the Headless 
+                Horseman.
+            </div>
+        </div>
+        <div class="details" >
+            <p>Name: Sleepy Hollow</p>
+            <p>Duration: 1h 45m</p>
+            <p class="rating_container">R-Rated</p> 
+            <a class="link" href="https://www.youtube.com/watch?v=6RsKwn_Je1k">Watch trailer here</a>
+        </div>
+    </div>
+    
+    <a href="#toUp"><img src="../Images/ScrollUp.png" alt="up arrow" style="top:500px;left:1225px" class="Arrow"></a>
+    
+    <footer><div id="toDown"></div><p>Page Editor :<a href="Student1EditorsPage.html"> Rozan Aaliya</a></p></footer>
+</body>
+</html>

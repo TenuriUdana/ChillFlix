@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inisial-scale=1.0">
+    <title>COMMENTS | ChillFlix</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/MainStyleSheet.css">
+    <link rel="stylesheet" href="../CSS/CommentFormStyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+     <!--Navigation Bar-->
+     <div class="top fixed">
+        <div class="Logo"><img src="../Images/Picture5.png" alt="logo"></div>
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="NavList">
+                <li><a href=Home.html>Home</a></li>
+                <li><a class="active" href="CommentsForm.html">Comments</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <script>
+            menu = document.querySelector(".menu");
+            menu.onclick = function(){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </div>
+    <!--End of Navigation Bar-->
+
+    <div id="toUp"></div>
+    <a href="#toDown"><img src="../Images/ScrollDown.png" alt="down arrow" style="top:100px" class="Arrow"></a>
+
+    <!--Title and the image-->
+    <div style="position: fixed; top: 125px; left: 5%;">
+        <p id="headingtitle" style="font-size: 55px;">
+            Tell us <br>what <br>you think <br>about <br>our website...
+        </p>
+    </div>
+    <div style="position: fixed; top: 470px; left: 10%;">
+        <img src="../Images/giphy.gif" alt="GIF" width="145" height="145">
+    </div>
+
+    <!--Comments Form-->
+    <form method="post" name="form" onsubmit="return validated()" action="mailto:chathunigunasena@gmail.com" enctype="text/plain" id="my_form">
+        
+        <!--Name-->
+        <fieldset>
+            <div class="container">
+                <label class="question" for="name">Your name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" style="width:600px; height: 30px;"> 
+            </div>
+            <div class="error">This question is required!</div> <!--Error Message-->
+        </fieldset>
+        <!--Star rating-->
+        <br><br>
+        <fieldset>
+            <div class="container">
+                <label class="question">Please rate your experience with our website today using the star rating system.</label><br>
+                <div class="star-widget">
+                    <input type="radio" name="rate" id="rate-5" value="5-stars">
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4" value="4-stars">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3" value="3-stars">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2" value="2-stars">
+                    <label for="rate-2" class="fas fa-star" ></label>
+                    <input type="radio" name="rate" id="rate-1" value="1-star">
+                    <label for="rate-1" class="fas fa-star"></label>
+                    <br>
+                    <label id="state"></label>
+                </div>
+            </div>
+            <div class="error">This question is required!</div> <!--Error Message-->
+        </fieldset>
+
+        <!--Description box-->
+        <br><br>
+        <fieldset>
+            <div class="container" >
+                <label class="question" for="comment">Please could you tell us your reasons for giving this rating?</label><br>
+                <textarea name="comment" id="comment" rows="5" cols="50" placeholder="Describe your thoughts..."></textarea>
+            </div>
+            <div class="error">This question is required!</div> <!--Error Message-->
+        </fieldset>
+
+        <!--Selectors-->
+        <br><br>
+        <fieldset>
+            <div class="container" >
+                <label class="question" for="selection1">How did you want to complete this task today? (optional)</label><br>
+                <select name="selection1" id="selection1" style="width:600px; height: 30px;">
+                    <option value="" disabled selected>---Please Select---</option>
+                    <option value="phone">Phone </option>
+                    <option value="website">Website</option>
+                    <option value="webchat">Webchat</option>
+                    <option value="socialmedia">Social media</option>
+                    <option value="email">Email</option>
+                </select>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <div class="container" >
+                <label class="question" for="selection1">If you had to complete this task again, how would you prefer to do it? (optional). </label><br>
+                <select name="selection2" id="selection2" style="width:600px; height: 30px;">
+                    <option value="" disabled selected>---Please Select---</option>
+                    <option value="phone">Phone </option>
+                    <option value="website">Website</option>
+                    <option value="webchat">Webchat</option>
+                    <option value="socialmedia">Social media</option>
+                    <option value="email">Email</option>
+                </select>
+            </div>
+        </fieldset>
+        <br><br>
+
+        <!--Buttons-->
+        <button type="reset" name="reset">Reset</button>
+        <button type="submit" name="submit" id="nextStep">Submit</button>
+
+        <div class="thank_you">
+            <p>Thank you for your feedback!</p> <!--Thank you Message-->
+        </div>
+    </form>
+    
+    <br><br><br>
+    <script>
+        function validated(){
+            var name = document.forms["form"]["name"].value;
+            var rating = document.forms["form"]["rate"].value;
+            var comment = document.forms["form"]["comment"].value;
+            var errorMsg = document.getElementsByClassName("error");
+            var thankMsg = document.getElementsByClassName("thank_you");
+
+            if(name=="" || name==null){
+                errorMsg[0].style.display = "block";
+                return false;
+            }
+            else if(rating=="" || rating==null){
+                errorMsg[1].style.display = "block";
+                return false;
+            }
+            else if(comment=="" || comment==null){
+                errorMsg[2].style.display = "block";
+                return false;
+            }else{
+                errorMsg[0].style.display = "none";
+                errorMsg[1].style.display = "none";
+                errorMsg[2].style.display = "none";
+                thankMsg[0].style.display = "block";   
+            }
+        }
+    </script>
+
+	<a href="#toUp"><img src="../Images/ScrollUp.png" alt="up arrow" style="top:595px" class="Arrow"></a>
+
+    <footer><div id="toDown"></div><p>Page Editor :<a href="Student2EditorsPage.html"> Chathuni Gunasena</a></p></footer>
+</body>
+
+</html> 

@@ -1,0 +1,164 @@
+body {
+    background-image: url('../Images/Black.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* style for the title */
+.title{
+  font-size:5em;
+  color: white;
+  text-align: center;
+  margin-top:100px;
+}
+/* photocards for items for sale */
+.itemsForSale {
+  border-radius:5px;
+  background-color:#C5C6C7;
+  width: 275px;
+  height:425px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  display: inline-block;
+}
+  /* style for the price of photocards */
+  .price {
+    margin: 10px;
+    color: rgb(75, 74, 74);
+    font-size: 22px;
+  }
+  /* style for add to cart buttons */
+  .itemsForSale button {
+    border-radius:3px;
+    margin: 15px;
+    border: none;
+    padding: 12px;
+    color:white;
+    background-color:  black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .itemsForSale button:hover {
+    opacity: 0.5;
+  }
+  /* square containers */
+  .cont1{
+    border-radius:5px;
+    background-color:#e0e2e3;
+    display: flex;
+    max-width: 50%;
+    height:auto;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  .cont2{
+    border-radius:5px;
+    background-color:#66FCF1;
+    max-width: 50%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  .cont3{
+    font-family: arial;
+    align-items: center;
+    border-radius:5px;
+    background-color:#66FCF1;
+    display: flex;
+    max-width: 50%;
+    height:50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cont3 p{
+    padding-left: 230px;
+    font-family: arial;
+    font-size: 25px;
+    color: black;
+  }
+
+  .cont4{
+    margin-top: 3px;
+    font-family: arial;
+    text-align: center;
+    align-items: center;
+    border-radius:5px;
+    background-color:#e0e2e3;
+    display: flex;
+    max-width: 50%;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cont5{
+    border-radius:  5px;
+    border:10px solid white ;
+    background-color:#c7cece;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  /* style for details that were accessed */
+  #checkoutTotal,#cardHolderName,#email,#editAddress,#editCode,#editCountry{
+    color:rgb(22, 22, 61);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  /* style for the input boxes */
+  input[type=text],input[type=email],input[type=password],input[type=date],textarea{
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(22, 22, 61);
+  } 
+/* stylefor buttons */
+   button,button[type=submit] {
+    margin-bottom: 10px;
+    border:none;
+    padding: 5px;
+    color:white;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color:black;
+    text-align: center;
+    font-size: 13px;
+  }
+  button:hover{
+    opacity: 0.5;
+  }
+  /* style for pop up form (https://www.w3docs.com/snippets/javascript/how-to-create-a-popup-form-using-javascript.html) */
+  .formPopup {
+    border-radius:5px;
+    background-color:white;
+    width: 700px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: arial;
+
+    display: none;
+    position:fixed ;
+    left: 50%;
+    top: 2.5%;
+    transform: translate(-50%, 5%);
+    z-index: 9;
+  }
+
+  h4{
+    color:#45A29E;
+  }

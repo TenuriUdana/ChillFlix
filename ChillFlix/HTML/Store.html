@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+    <title>STORE | ChillFlix</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/MainStyleSheet.css">
+    <link rel="stylesheet" href="../CSS/Store_StyleSheet.css">
+</head>
+
+<body >
+    <!--Navigation Bar-->
+    <div class="top fixed">
+        <!--Adds the icon picture to the navigation bar.-->
+        <div class="Logo"><img src="../Images/Picture5.png" alt="logo"></div>
+        <!--Creating menu icon-->
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="NavList">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="CommentsForm.html">Comments</a></li>
+                <li><a class="active" href="Store.html">Store</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <script>
+            menu = document.querySelector(".menu");
+            menu.onclick = function(){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </div>
+    <!--End of Navigation Bar-->
+    <a href="#toDown"><img src="../Images/ScrollDown.png" alt="down arrow" style="top:100px;left:1225px" class="Arrow"></a>
+    <div id="toUp"></div>
+    
+    <p class="title">Our Store</p>
+    <div style="margin-top:50px;margin-left:75px;">
+        <!-- Creating photcards for the items available for sale -->
+        <div class="itemsForSale">
+            <img src="../Images/usposter.jpg" alt="Us Poster" width="125" height="200" style="padding-top: 15px;">
+            <h1>Us Poster</h1>
+            <h1> "15 X 25"</h1>
+            <p class="price">£10.00</p>
+            <label style="font-family: arial;" for="quantity1">Quantity: </label> 
+            <input type="number" name="quantity" id="quantity1" value="0" min="0" max="10">
+            <p><button onclick="addToCart('Us Poster','10.00')"> Add to Cart</button></p>
+        </div>
+
+         <div class="itemsForSale">
+            <img src="../Images/duneposter.jpg" alt="Dune Poster" width="125" height="200" style="padding-top: 15px;">
+            <h1>Dune Poster</h1>
+            <h1> "15 X 25"</h1>
+            <p class="price">£12.75</p>
+            <label style="font-family: arial;" for="quantity2">Quantity: </label> 
+            <input type="number" name="quantity" id="quantity2" value="0" min="0" max="10">
+            <p><button onclick="addToCart('Dune Poster','12.75')"> Add to Cart</button></p>
+        </div>
+
+        <div class="itemsForSale">
+            <img src="../Images/titanicposter.jpg" alt="Titanic Poster" width="125" height="200" style="padding-top: 15px;">
+            <h1>Titanic Poster</h1>
+            <h1> "15 X 25"</h1>
+            <p class="price">£13.50</p>
+            <label style="font-family: arial;" for="quantity3">Quantity: </label> 
+            <input type="number" name="quantity" id="quantity3" value="0" min="0" max="10">
+            <p><button onclick="addToCart('Titanic Poster','13.50')">Add to Cart</button></p>
+        </div>
+
+        <div class="itemsForSale">
+            <img src="../Images/lucaPoster.jpg" alt="Luca Poster" width="125" height="200" style="padding-top: 15px;">
+            <h1>Luca Poster</h1>
+            <h1> "15 X 25"</h1>
+            <p class="price">£10.25</p>
+            <label style="font-family: arial;" for="quantity4">Quantity: </label> 
+            <input type="number" name="quantity" id="quantity4" value="0" min="0" max="10">
+            <p><button onclick="addToCart('Luca Poster','10.25')">Add to Cart</button></p>
+        </div>
+    </div>
+    <!-- Creating the area to print items added to cart -->
+    <div class="cont3" >
+        <p><b>Shopping Cart</b></p>
+    </div>
+
+    <div class="cont1"  style="padding: 25px;">
+        <table>
+            <tr><th style="width:350px;">Item</th><th style="width:125px;">Quantity</th><th style="width:100px;">Price</th></tr>
+            <tr><td id = "itemName"></td><td id ="itemQuantity"></td><td id ="itemPrice"></td></tr>
+        </table>
+    </div> 
+
+    <div class="cont4">
+        <table>
+            <tr><th style="width:500px;text-align: left;">Total:</th><th style="width:110px;" id="total">£0.00</th></tr>
+        </table>
+    </div>
+    
+    <!-- asking using to enter name and email -->
+    <div class="cont2" >
+        <form style="padding-top:15px;">
+            <label for="name"><b> Name:</b></label>
+		    <input type="text" name="name" id="name" size="20" maxlength="20" required placeholder="  Enter your name">
+            <label for="useremail"><b>Email:</b></label>
+		    <input type="email" name="useremail" id="useremail" required placeholder="  Enter your email"><br><br>
+            <button type="button" onclick="openForm()">Go To Checkout</button> <!-- opens the checkout form when clicked -->
+		    <button onclick="document.location.reload()">Clear Cart</button> <!-- clears the cart by refreshing the page (https://www.freecodecamp.org/news/refresh-the-page-in-javascript-js-reload-window-tutorial/) --> 
+        </form>
+    </div>
+    <!-- pop up checkout form -->
+    <div id="popupForm" class="formPopup">
+        <form> <!-- https://www.w3docs.com/snippets/javascript/how-to-create-a-popup-form-using-javascript.html -->
+            <p>* Indicates a required field</p>
+            <div class="cont5">
+                <h4>ORDER SUMMARY</h4><br>
+                <div style="display: inline-block;">Total =&nbsp; <p style="display: inline-block;" id="checkoutTotal"></p></div>
+            </div>
+            <div class="cont5">
+                <h4>PAYMENT DETAILS</h4><br>
+                <label for="card">* Card Number:</label>
+                <input type="password" name="card" id="card" required ><br><br>
+                <div style="display: inline-block;">* Cardholder's Name:&nbsp; <p style="display: inline-block;" id="cardHolderName" ></p></div><br><br>
+                <label for="expiryDate">* Expiry Date:</label>
+		        <input type="date" name="expiryDate" id="expiryDate" required><br><br>
+            </div>
+            <div class="cont5">
+                <h4>ADDRESS DETAILS</h4><br>
+                <div style="display: inline-block;">* Address:&nbsp; 
+                    <p style="display: inline-block;" id="editAddress" ></p>
+                    <p style="display: inline-block;" id="editCode" ></p>
+                    <p style="display: inline-block;" id="editCountry" ></p>
+                </div><br>
+                &nbsp;<button type="button" onclick="openEditForm()">Edit</button>
+            </div>    
+            <div class="cont5">
+                <h4>CONTACT DETAILS</h4><br>
+                <label for="number">* Phone number:</label>
+                <input type="text" name="number" id="number" size="20" maxlength="20" required ><br><br>
+                <div style="display: inline-block;">* Email:&nbsp; <p style="display: inline-block;" id="email" ></p></div>
+            </div>
+            <button>Make Payment</button>
+            <button type="button" onclick="closeForm()">Close</button> 
+        </form>
+    </div>
+    <form id="edit" class="formPopup">
+        <label for="address">* Address:</label>
+        <textarea cols="5" rows="1" id="address" ></textarea><br><br>
+        <label for="code">* Postcode/ZIP code:</label>
+        <input type="text" name="code" id="code" size="20" maxlength="20"><br><br>
+        <label for="country">* Country: </label>
+        <input type="text" name="country" id="country" size="20" maxlength="20"><br><br>
+        <button type="button" onclick="closeEditForm()">Cancel</button>
+        <button type="button" onclick="confirmChanges()">Confirm Changes</button>
+    </form>
+
+    <script src="../JS/store.js"></script>
+
+    <a href="#toUp"><img src="../Images/ScrollUp.png" alt="up arrow" style="top:500px;left:1225px" class="Arrow"></a>
+    
+    <footer><div id="toDown"></div><p>Page Editor :<a href="Student1EditorsPage.html"> Rozan Aaliya</a></p></footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inisial-scale=1.0">
+    <title>HOME | ChillFlix</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/MainStyleSheet.css">
+    <link rel="stylesheet" href="../CSS/Home_StyleSheet.css">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="top fixed">
+
+        <div class="Logo"><img src="../Images/Picture5.png" alt="logo"></div>
+    
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="NavList">
+                <li><a class="active" href="Home.html">Home</a></li>
+                <li><a href="CommentsForm.html">Comments</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <script>
+            menu = document.querySelector(".menu");
+            menu.onclick = function(){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </div>
+    <!--End of Navigation Bar-->
+
+    <a href="#toDown"><img src="../Images/ScrollDown.png" alt="down arrow" style="top:100px" class="Arrow"></a>
+    <div id="toUp"></div>
+
+    <!--Title-->
+    <div style="position: absolute; top: 150px; left: 60px;">
+        <p id="intro" style="font-size: 55px;">
+            Let's learn <br>more about <br>your favourite <br><span style="font-family:Impact; font-size: 70px; -webkit-text-stroke: 1px #45A29E;">movie <br>categories...</span>
+        </p>
+    </div>
+
+    <!--Connecting Individual Pages-->
+    <div class="shape" style="position: absolute; top: 135px; left: 500px">
+        <a href="Romance.html"><img src="../Images/Romance.jpg" alt="rom-com"></a>
+        <div class="overlay">Romance</div>
+    </div> 
+    <div class="shape" style="position: absolute; top: 135px; left: 950px">
+        <a href="Family.html"><img src="../Images/Family.jpg" alt="family"></a>
+        <div class="overlay">Family</div>
+    </div> 
+    <div class="shape" style="position: absolute; top: 375px; left: 500px">
+        <a href="SciFi.html"><img src="../Images/SciFi.jpg" alt="science fiction"></a>
+        <div class="overlay">Sci-Fi</div>
+    </div> 
+    <div class="shape" style="position: absolute; top: 375px; left: 950px">
+        <a href="Horror.html"><img src="../Images/Horror.jpg" alt="horror"></a>
+        <div class="overlay">Horror</div>
+    </div>
+
+    <a href="#toUp"><img src="../Images/ScrollUp.png" alt="up arrow" style="top:595px" class="Arrow"></a>
+    
+    <footer><div id="toDown"></div><p>Page Editor :<a href="Student2EditorsPage.html"> Chathuni Gunasena</a></p></footer>
+    
+</body>
+</html>

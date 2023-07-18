@@ -1,0 +1,105 @@
+body {
+    background-image:url('../Images/bg7.jpg'); 
+    background-attachment:fixed;
+    background-size:cover; 
+}
+.background_image{
+	background-image: url("../Images/Horror3.jpg");
+  height: 100vh; 
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+  color:white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150px;
+  padding-top: 250px;
+}
+.title{
+  margin-bottom: 50px;
+  font-size: 50px;
+  color:white;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* style for movie details text */
+.details{
+  margin-left: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* style for text about the history for horror */
+.history_container{
+    margin-top: 25px;    
+    font-size: 18px;
+    padding: 10px 10px;
+    font-family: monospace;
+    text-align: center;
+    color: black;
+    border-radius:5px;
+    background-color:#45A29E;
+    max-width: 1000px;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* style for age rating */
+.rating_container{
+    border: #171e25 2px solid;
+    color: black;
+    border-radius:2px;
+    width:65px;
+    height:auto;
+}
+/* style for movies details and image(https://www.w3docs.com/snippets/css/how-to-display-an-animated-text-over-an-image-on-hover-using-only-css3.html) */
+.movie_container {
+    margin-bottom: 50px;
+    margin-left:37px;
+    background-color: #C5C6C7;
+    position: relative;
+    padding: 0; 
+    height: 340px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .content {
+    opacity: 0;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #C5C6C7;
+    background-color: rgba(31, 30, 30, 0.5);
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 245px;
+    height: 245px;
+    transition:all 0.5s ease-in-out;
+    text-align: center;
+  }
+  .movie_container .content:hover {
+    opacity: 1;
+  }
+  .movie_container .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+  .movie_container .content:hover .text {
+    opacity: 1;
+    width: 245px;
+    height: 245px;
+  }
+  /* style for link */
+  .link{
+    color:black;
+    font-style: italic;
+  }
+  .link:hover{
+    color:rgb(175, 14, 14);
+  }

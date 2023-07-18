@@ -1,0 +1,189 @@
+.background-image {
+	background-image: url("../Images/gallery.jpg");
+    height: 100vh; 
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.topic{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+  font-size: 45px;
+	text-align: center;
+	color: white;
+	letter-spacing: 25px;
+	text-shadow: 4px 4px 10px #c5c6c7;
+    font-family: verdana;
+}
+
+
+.container{
+    margin: 50px 100px 100px;
+    position: relative;
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+   
+}
+
+section img{
+    width: 100%;
+    height: 200px;
+}
+
+section div:hover{
+    box-shadow: 0px 1px 10px #555;
+        transform: scale(1.1); 
+}
+
+section p{
+    margin:10px;
+    font-size: small;
+    font-weight:normal;
+    letter-spacing: 1px;
+    color: #555;
+    
+}
+
+section h3{
+    margin: 5px 0 5px 10px;
+
+}
+
+
+.hover-area {
+    width: 300px;
+	height: 200px;
+	margin: 10px 15px 10px 10px;
+    border-radius: 10px;
+
+}
+
+.hover-area img{
+    border-radius: 10px;
+}
+
+.hidden-area {
+    width: 60%;
+    height: 30%;
+    background-color: #32e8d5;
+    position: absolute;
+    bottom: 230px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+    border: 1px solid;
+
+}
+
+.hover-area:hover + .hidden-area{
+    display: block;
+
+}
+
+.empty-area{
+    width: 700px;
+	height: 220px;
+	margin: 15px;
+    border-radius: 10px; 
+}
+
+/* dark theme*/
+
+.dark{
+  background-color:black;
+
+}
+
+.topic-dark{
+    color: #c5c6c7;
+}
+
+.hidden-dark {
+  background-color:black;
+
+}
+
+.footer-dark{
+    background-color:black;
+}
+
+.nav-scroll-dark{
+    background-color: black;
+}
+
+/* light theme*/
+
+.light{
+  background-color:#f6f0f0;
+
+}
+
+.topic-light{
+    color: #f6f0f0;
+}
+
+.hidden-light {
+  background-color:white;
+
+}
+
+.footer-light{
+    background-color: #f6f0f0;
+}
+
+.nav-scroll-light{
+    background-color: white;
+}
+
+
+/* buttons */
+
+.btn{
+    background-color:#c5c6c7;
+    color: white;
+    padding: 10px 25px;
+margin: 15px; 	
+
+}
+
+.btn:hover{
+    box-shadow: 0px 1px 10px #7a7a7a;
+}
+
+.font-change
+.color-change,
+.color-picker{
+    text-align: left;  
+}
+
+
+#color-picker {
+    margin-left: 15px;
+    border: none;
+    padding: 0;
+}
+
+#default{
+    background-color: #66fcf1;
+}
+
+#light{
+    background-color:#f6f0f0;
+}
+
+#dark{
+    background-color: black;
+
+}

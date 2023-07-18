@@ -1,0 +1,94 @@
+/**------------------------------------------------------------------CSS for Site Map-------------------------------------------------------------- **/
+ 
+body{
+    background-image: url('../Images/Black.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.background-image {
+	background-image: url("../Images/sitemap.jpg");
+    height: 100vh; 
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.topic{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+}
+
+.topic h1 {
+  font-size: 65px;
+	text-align: center;
+	color: white;
+	letter-spacing: 25px;
+    font-family: verdana;
+}
+
+.topic p {
+  font-size: 30px;
+	text-align: center;
+	color: white;
+	letter-spacing: 20px;
+	background-color: rgba(69,162,158, 0.6);
+	font-family: candara;
+}
+
+.box
+{
+    stroke-width: 4;
+    stroke: #0747e1;
+}
+
+.round
+{
+    stroke-width: 3;
+    stroke: #7856fa;
+}
+
+.svg g:hover {
+    fill: rgba(94, 241, 187);
+    
+}
+text
+{
+    fill: white;
+}
+
+path{
+    stroke: white;
+    stroke-width: 4;
+    fill: none;
+}
+
+
+.presentation
+{
+    fill: #c5c6c7 ;
+}
+
+.homepage
+{
+    fill: #808080;
+}
+
+
+.branch1
+{
+    fill: rgba(31,40,51);
+}
+
+
+.branch2
+{
+    fill: rgb(18, 60, 112);
+}

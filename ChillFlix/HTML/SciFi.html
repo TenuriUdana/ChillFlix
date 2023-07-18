@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi | ChillFlix</title>
+    <link rel="icon" type="image/x-icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/MainStyleSheet.css">
+    <link rel="stylesheet" href="../CSS/SciFiStyleSheet.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="top fixed">
+        <div class="Logo"><img src="../Images/Picture5.png" alt="logo"></div>
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="NavList">
+                <li><a class="active" href="Home.html">Home</a></li>
+                <li><a href="CommentsForm.html">Comments</a></li>
+                <li><a href="Store.html">Store</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <script>
+            menu = document.querySelector(".menu");
+            menu.onclick = function(){
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+    </div>
+    <!--End of Navigation Bar-->
+
+    <a href="#toDown"><img src="../Images/ScrollDown.png" alt="down arrow" style="top:100px" class="Arrow"></a>
+    <div id="toUp"></div>
+
+    <!--Slide Show-->
+    <div id="titlePic">
+        <img src="../Images/SCIENCE_FICTION.png" alt="science fiction">
+    </div>
+    <br><br>
+    <div class="slideShow">
+        <div class="slide fade">
+            <div style="color: white;">1/4</div>
+            <img src="../Images/StarWars.jpg" alt="star wars">
+            <div class="text">Science fiction (or sci-fi) is a film genre that uses speculative, fictional science-based depictions of phenomena not entirely accepted by mainstream science, such as extraterrestrial lifeforms, spacecraft, robots, cyborgs, dinosaurs, mutants, interstellar travel, time travel, or other technologies. Science fiction films have often focused on political or social issues and explored philosophical issues like the human condition.</div>
+        </div>
+        <div class="slide fade">
+            <div style="color: white;">2/4</div>
+            <img src="../Images/SpaceOdyssey.jpg" alt="space odyssey">
+            <div class="text" style="font-size: 24px;">The genre has existed since the early years of silent cinema when Georges Melies' A Trip to the Moon (1902) employed trick photography effects. From the 1930s to the 1950s, the genre consisted mainly of low-budget B movies. After Stanley Kubrick's landmark 2001: A Space Odyssey (1968), the science fiction film genre was taken more seriously. In the late 1970s, big-budget science fiction films filled with special effects became popular with audiences after the success of Star Wars (1977) and paved the way for the blockbuster hits of subsequent decades.</div>
+        </div>
+        <div class="slide fade">
+            <div style="color: white;">3/4</div>
+            <img src="../Images/Avatar.jpg" alt="avatar">
+            <div class="text">Science fiction films are often speculative in nature, and often include key supporting elements of science and technology. However, as often as not the "science" in a Hollywood science fiction movie can be considered pseudo-science, relying primarily on atmosphere and quasi-scientific artistic fancy than facts and conventional scientific theory. The definition can also vary depending on the viewpoint of the observer.</div>
+        </div>
+        <div class="slide fade">
+            <div style="color: white;">4/4</div>
+            <img src="../Images/ScarletWitch.jpg" alt="scarlet witch">
+            <div class="text">Many science fiction films include elements of mysticism, occult, magic, or the supernatural, considered by some to be more proper elements of fantasy or the occult film. Film theorist Vivian Sobchack argues that science fiction films differ from fantasy films in that while science fiction film seeks to achieve our belief in the images we are viewing, fantasy film instead attempts to suspend our disbelief.</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&lang;</a>
+        <a class="next" onclick="plusSlides(1)">&rang;</a>
+    </div>
+    <br><br>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+        function showSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            if (n> slides.length){
+                slideIndex = 1
+            }
+            if (n<1){
+                slideIndex = slides.length
+            }
+            for(i = 0; i< slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+    <!--End of the Slide Show-->
+    <br><br>
+    <div id="subTitle">Science Fiction Movie Recommendations</div>
+
+    <!--Poster row-->
+    <div class="row">
+        <div class="column">
+            <a href="#movie1"><img class="demo" src="../Images/EndGamePoster.jpg" alt="EndGamePoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie2"><img class="demo" src="../Images/AvatarPoster.jpg" alt="AvatarPoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie3"><img class="demo" src="../Images/InterstellarPoster.jpg" alt="InterstellarPoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie4"><img class="demo" src="../Images/MIBPoster.jpg" alt="MIBPoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie5"><img class="demo" src="../Images/PassengersPoster.jpg" alt="PassengersPoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie6"><img class="demo" src="../Images/JurassicWorldPoster_.jpg" alt="JurassicWorldPoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie7"><img class="demo" src="../Images/TerminatorPoster.jpg" alt="TerminatorPoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie8"><img class="demo" src="../Images/MartionPoster.jpg" alt="MartionPoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie9"><img class="demo" src="../Images/DunePoster.jpg" alt="DunePoster"></a>
+        </div>
+        <div class="column">
+            <a href="#movie10"><img class="demo" src="../Images/WorldWarZPoster.jpg" alt="WorldWarZPoster"></a>
+        </div> 
+    </div>
+
+    <!--Information boxes-->
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie1">
+            <img src="../Images/Endgame.jpg" alt="Endgame">
+            <div class="movieInfo">
+                <p class="filmTitle">Avengers: Endgame</p><br><br>
+                <p class="info">Release date: April 26, 2019<br>
+                Directors: Anthony Russo, Joe Russo<br>
+                Distributed by: Walt Disney Studios Motion Pictures</p><br><br>
+                <div><a href="https://youtu.be/TcMBFSGVi1c" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie2">
+            <img src="../Images/AvatarWayofWater.jpeg" alt="Avatar way of water">
+            <div class="movieInfo">
+                <p class="filmTitle">Avatar: The Way of Water</p><br><br>
+                <p class="info">Release date: December 16, 2022<br>
+                    Director: James Cameron<br>
+                    Distributed by: 20th Century Studios</p><br><br>
+                <div><a href="https://youtu.be/d9MyW72ELq0" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie3">
+            <img src="../Images/Interstellar.jpg" alt="interstellar">
+            <div class="movieInfo">
+                <p class="filmTitle">Interstellar</p><br><br>
+                <p class="info">Release date: October 26, 2014<br>
+                    Director: Christopher Nolan<br>
+                    Distributed by: Paramount Pictures, Warner Bros. Pictures, Filmcompagniet</p><br><br>
+                <div><a href="https://youtu.be/Lm8p5rlrSkY" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie4">
+            <img src="../Images/MIB.jpg" alt="Men in black">
+            <div class="movieInfo">
+                <p class="filmTitle">Men in Black: International</p><br><br>
+                <p class="info">Release date: June 14, 2019 <br>
+                    Director: F. Gary Gray<br>
+                    Distributed by: Sony Pictures Releasing</p><br><br>
+                <div><a href="https://youtu.be/BV-WEb2oxLk" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie5">
+            <img src="../Images/Passengers.jpg" alt="Passengers">
+            <div class="movieInfo">
+                <p class="filmTitle">Passengers</p><br><br>
+                <p class="info">Release date: December 21, 2016 <br>
+                    Director: Morten Tyldum<br>
+                    Distributed by: Columbia Pictures, United International Pictures, Sony Pictures Releasing</p><br><br>
+                <div><a href="https://youtu.be/7BWWWQzTpNU" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie6">
+            <img src="../Images/JurassicWorld.jpg" alt="Jurassic World">
+            <div class="movieInfo">
+                <p class="filmTitle">Jurassic World Dominion</p><br><br>
+                <p class="info">Release date: June 10, 2022  <br>
+                    Director: Colin Trevorrow<br>
+                    Distributed by: Universal Pictures</p><br><br>
+                <div><a href="https://youtu.be/fb5ELWi-ekk" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie7">
+            <img src="../Images/Terminator.jpg" alt="Terminator">
+            <div class="movieInfo">
+                <p class="filmTitle">Terminator: Dark Fate</p><br><br>
+                <p class="info">Release date: November 1, 2019  <br>
+                    Director: Tim Miller<br>
+                    Distributed by: Paramount Pictures</p><br><br>
+                <div><a href="https://youtu.be/oxy8udgWRmo" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie8">
+            <img src="../Images/Martian.jpg" alt="The Martian">
+            <div class="movieInfo">
+                <p class="filmTitle">The Martian</p><br><br>
+                <p class="info">Release date: September 30, 2015  <br>
+                    Director: Ridley Scott<br>
+                    Distributed by: 20th Century Studios</p><br><br>
+                <div><a href="https://youtu.be/ej3ioOneTy8" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie9">
+            <img src="../Images/Dune.jpg" alt="Dune">
+            <div class="movieInfo">
+                <p class="filmTitle">Dune</p><br><br>
+                <p class="info">Release date: October 22, 2021  <br>
+                    Director: Denis Villeneuve<br>
+                    Distributed by: Warner Bros. Pictures, SF Studios</p><br><br>
+                <div><a href="https://youtu.be/8g18jFHCLXk" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="BigContainer">
+        <div class="movieSlide" id="movie10">
+            <img src="../Images/WorldWarZ.jpg" alt="World War Z">
+            <div class="movieInfo">
+                <p class="filmTitle">World War Z</p><br><br>
+                <p class="info">Release date: June 21, 2013  <br>
+                    Director: Marc Forster<br>
+                    Distributed by: Paramount Pictures</p><br><br>
+                <div><a href="https://youtu.be/Md6Dvxdr0AQ" class="trailar">WATCH TRAILER</a></div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#toUp"><img src="../Images/ScrollUp.png" alt="up arrow" style="top:595px" class="Arrow"></a>
+    
+    <footer><div id="toDown"></div><p>Page Editor :<a href="Student2EditorsPage.html"> Chathuni Gunasena</a></p></footer>
+</body>
+</html>

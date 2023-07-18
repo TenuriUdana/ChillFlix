@@ -1,0 +1,164 @@
+body{
+    background-image: url('../Images/SciFiBack3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#titlePic img {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    height: auto;
+}
+/*Slide show CSS*/
+.slideShow{
+    margin: auto;
+    position: relative;
+    top:650px;
+    width: 1300px;
+    height: 400px;
+    background-color: rgba(31, 40, 51, 0.6);
+    border: 3px solid #66fcf1;
+    border-radius: 4px;
+    padding: 10px;
+    
+}
+.slide img{
+    position: absolute;
+    top:30px;
+    left: 20px;
+    height: auto;
+    width: 600px;
+}
+.slide .text{
+    position: absolute;
+    top:30px;
+    left: 670px;
+    width:550px;
+    height: auto;
+    color: #c5c6c7;
+    font-family:Candara;
+    font-size: 27px;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} 
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(102, 252, 241, 0.7);
+} 
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+} 
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+
+#subTitle{
+    position: absolute;
+    top:1200px;
+    left:18%;
+    font-family:Helvetica;
+    font-size: 50px;
+    color:aquamarine;
+}
+/*Information Box CSS*/
+.BigContainer{
+    margin: auto;
+    position: relative;
+    top:900px;
+    width: 1100px;
+    height: 400px;
+    background-color: rgba(31, 40, 51, 0.4);
+    border: 3px solid #66fcf1;
+    border-radius: 4px;
+    padding: 10px;   
+} 
+.movieSlide img{
+    position: absolute;
+    top:25px;
+    left: 45px;
+    height: 350px;
+    width: auto;
+    
+} 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.row{
+    margin: auto;
+    position: relative;
+    top:850px;
+    background-color: rgba(31, 40, 51, 0.5);
+    border: 3px solid #66fcf1;
+    border-radius: 4px;
+    padding: 10px; 
+    height: 157px;
+}
+.column {
+    float: left;
+    width: 10%;
+  }
+  
+.column img{
+    width:90px;
+    height: auto;
+} 
+.demo {
+    opacity: 1;
+  }
+  
+.demo:hover {
+    opacity: 0.6;
+  }
+.movieInfo{
+    position: absolute;
+    top:40px;
+    left: 720px;
+    width:350px;
+    height: auto;
+}
+.filmTitle{
+    font-size: 40px;
+    font-family: Arial;
+    color: antiquewhite;
+}
+.info{
+    font-size: 20px;
+    font-family: Verdana;
+    color: antiquewhite;
+}
+.trailar{
+    font-size: 30px;
+    font-family: Impact;
+    color: aqua;
+}
+.trailar:hover{
+    color: aquamarine;
+} 
+footer{
+    position: absolute;
+    top:5650px;
+}
